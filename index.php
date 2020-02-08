@@ -58,8 +58,8 @@ foreach($week as $day) {
     $day = substr($day, 0, strlen($day)-3);
 }
 print_r($week);
-                                                            ?
-/*
+
+
 
 new_exercise(5);
 // === Exercise 5 ===
@@ -71,8 +71,8 @@ for ($letter = 'a'; $letter <= 'z' && $letter !== 'aa'; $letter++) {
     array_push($arr, $letter);
 }
 print_r($arr);
-
-
+// pushing what is in the variable.
+/*
 
 new_exercise(6);
 // === Final exercise ===
