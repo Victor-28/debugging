@@ -72,15 +72,15 @@ for ($letter = 'a'; $letter <= 'z' && $letter !== 'aa'; $letter++) {
 }
 print_r($arr);
 // pushing what is in the variable.
-/*
+
 
 new_exercise(6);
 // === Final exercise ===
 // The fixed code should echo the following at the bottom:
 // Here is the name: $name - $name2
 // $name variables are decided as seen in the code, fix all the bugs whilst keeping the functionality!
-$arr = [];
 
+$arr = [];
 
 function combineNames($str1 = "", $str2 = "") {
     $params = [$str1, $str2];
@@ -118,8 +118,10 @@ function copyright(int $year) {
     return "&copy; $year BeCode";
 }
 //print the copyright
-copyright(date('Y'));
 
+echo copyright((int)date('Y'));
+
+/*
 new_exercise(8);
 function login(string $email, string $password) {
     if($email == 'john@example.be' || $password == 'pocahontas') {
