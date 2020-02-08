@@ -5,7 +5,7 @@ ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
 
-echo "hello";
+
 
 // Below are several code blocks, read them, understand them and try to find whats wrong.
 // Once this exercise is finished, we'll go over the code all together and we can share how we debugged the following problems.
@@ -24,18 +24,17 @@ function new_exercise($x) {
 }
 
 
-
-/*new_exercise(2);
+new_exercise(2);
 // === Exercise 2 ===
 // Below we create a week array with all days of the week.
 // We then try to print the first day which is monday, execute the code and see what happens.
 
 $week = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
 $monday = $week[1];
-echo $week;
+echo $monday;
 
-
-
+//echo $monday to print the first day
+/*
 
 
 new_exercise(3);
@@ -44,8 +43,7 @@ new_exercise(3);
 
 $str = “Debugged ! Also very fun”;
 echo substr($str, 0, 10);
-
-
+echo subst($str,0,8);********
 
 
 new_exercise(4);
@@ -57,10 +55,8 @@ new_exercise(4);
 foreach($week as $day) {
     $day = substr($day, 0, strlen($day)-3);
 }
-
 print_r($week);
-
-
+                                                            ?
 /*
 
 new_exercise(5);
@@ -69,11 +65,11 @@ new_exercise(5);
 // Fix the code so the for loop only pushes a-z in the array
 
 $arr = [];
-for ($letter = 'a'; $letter <= 'z'; $letter++) {
+for ($letter = 'a'; $letter <= 'z' && $letter !== 'aa'; $letter++) {
     array_push($arr, $letter);
 }
+print_r($arr);
 
-print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alfabetical array
 
 
 new_exercise(6);
@@ -128,7 +124,7 @@ function login(string $email, string $password) {
         return 'Welcome John';
         return ' Smith';
     }
-    return 'No access';
+    else return  'No access';
 }
 //should great the user with his full name (John Smith)
 $login = login('john@example', 'pocahontas');
@@ -136,6 +132,7 @@ $login = login('john@example', 'pocahontas');
 $login = login('john@example', 'dfgidfgdfg');
 //no access
 $login = login('wrong@example', 'wrong');
+
 
 new_exercise(9);
 function isLinkValid(string $link) {
