@@ -33,7 +33,7 @@ $week = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "su
 $monday = $week[1];
 echo $monday;
 
-//echo $monday to print the first day
+//echo $monday to print the first day.
 
 
 
@@ -41,13 +41,13 @@ new_exercise(3);
 // === Exercise 3 ===
 // This should echo ` "Debugged !" `, fix it so that that is the literal text echo'ed
 
-$str = “Debugged ! Also very fun”;
+$str = "“Debugged ! Also very fun”";
 echo substr($str, 3, 10);
 
-//substr=part of string the '=0 and "1 and D=3 till the end
+//substr=part of string the '=0 and "1 and D=3 till the end.
 
 
-/*
+
 new_exercise(4);
 // === Exercise 4 ===
 // Sometimes debugging code is just like looking up code and syntax...
