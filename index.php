@@ -80,6 +80,7 @@ new_exercise(6);
 // Here is the name: $name - $name2
 // $name variables are decided as seen in the code, fix all the bugs whilst keeping the functionality!
 
+/*
 $arr = [];
 
 function combineNames($str1 = "", $str2 = "") {
@@ -112,7 +113,7 @@ function randomHeroName()
 }
 
 echo "Here is the name: " . combineNames();
-
+/*
 new_exercise(7);
 function copyright(int $year) {
     return "&copy; $year BeCode";
@@ -132,10 +133,13 @@ function login(string $email, string $password) {
 }
 //should great the user with his full name (John Smith)
 $login = login('john@example', 'pocahontas');
+echo $login . "<br>";
 //no access
 $login = login('john@example', 'dfgidfgdfg');
+echo $login     . "<br>";
 //no access
 $login = login('wrong@example', 'wrong');
+echo $login;
 
 
 new_exercise(9);
